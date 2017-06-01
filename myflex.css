@@ -22,6 +22,10 @@ body{
 	background-color:#005577;
 	color:white;
 }
+content,#flexcontainer{
+	margin-left:250px;
+	margin-top:150px;
+}
 .footer{
 	position:fixed;
 	width:100%;
@@ -48,3 +52,32 @@ li a:active{
 	background-color: lightgreen;
 }
 
+
+.flex-container{
+		margin:250px auto;
+		max-width: 800px;
+		padding:2px;
+		border:2px solid red;
+		display:flex;
+		background-color:#f2f2f2;
+	}
+	.flex-item{
+		width:100px;
+		height:100px;
+		margin:2px;
+		line-height:100px;
+		font-weight:bold;
+		border: 2px solid ;
+		text-align:center;
+		background-color: #fa1244;
+		color:white;
+			
+	}
+	.controls{
+		position:absolute;
+		border:2px solid red;
+		width:400px;
+		line-height:150%;
+		bottom:270px;
+		right:30px;
+	}
