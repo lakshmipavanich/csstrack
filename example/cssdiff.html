@@ -12,116 +12,102 @@
 			.nav ul{
                 display:flex;
 				flex-flow:row wrap;
-				justify-content:flex-start;
-				box-sizing:border-box;
 			}
-			li{
+			/*.nav-list li{ we replace this code bcoz wrote nav-item class below
 				border:2px solid white;
-				text-align: center;
 				flex:1 1 auto;
 				color:white;
-			}
+			}*/
 			h3{font-size:1.8rem;}
 			p{
 				font-size:1.5rem;
                 opacity:0.5;
 			}
-            .order li:hover .money{
+            .order li:hover p{
 				opacity:1;
 			}
 			.order li:hover h3 {
 				opacity:0.5;
 			}
            .order li{
-                height:35vh;
+                height:33vh;/*we must mention height */
                 display:flex;
                 flex-flow:row nowrap;
-                justify-content:center;
-                align-items:center;
             }
-           
-			.nav-1 li:nth-child(1) {
-				background-color:#31CCFF;
-				flex:2 1 auto;
-			}
-			.nav-1 li:nth-child(2) {
-				background-color:#33CCCC
-			}
-			.nav-1 li:nth-child(3) {
-				background-color:#cdf;
-			}
-			.nav-2 li:nth-child(1) {
-				background-color:#192;
-			}
-			.nav-2 li:nth-child(2) {
-				background-color:#f4a;
-                flex:2 1 auto;
-			}
-			.nav-2 li:nth-child(3) {
-				background-color:#983;
-			}
-			.nav-3 li:nth-child(1) {
-				background-color:#d72;
-			}
-			.nav-3 li:nth-child(2) {
-				background-color:#2df;
-			}
+            .nav-item{
+                flex:1 1 auto;
+                border:2px solid white;
+                color:white;
+             }
+             .is-special{
+                 flex:2 1 auto;
+             }
+            /*To set background color of each item*/
+            .is-c1{background-color:#31CCFF;}
+			.is-c2{background-color:#3CC;}
+			.is-c3{background-color:#CDF;}
+			.is-c4{background-color:#192;}
+			.is-c5{background-color:#f4a;}
+			.is-c6{background-color:#983;}
+			.is-c7{background-color:#d72;}
+			.is-c8{background-color:#2df;}
+            
+            /*To align text in center*/
             .cell li{
                 display:flex;
                 flex-flow:column wrap;
                 justify-content:center;
                 align-items:center;
-                }
+                }           
 		</style>
 	</head>
 	<body>
 	<ul class="nav">
-        <li>
+        <li class="nav-list">
            <ul class="nav-1 order cell"> 
-                <li class="nav-item">
+                <li class="nav-item is-c1 is-special">
                     <h3>Revenue</h3>
                     <p class="money">US$ 20 Billions</p>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item is-c2">
                     <h3>Receivables</h3>
                     <p class="money">US$ 20 Billions</p>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item is-c3">
                     <h3>Treasury</h3>
                     <p class="money">US$ 20 Billions</p>
                 </li>
             </ul>
         </li>
         <!-- nav 2-->
-        <li>
+        <li class="nav-list">
             <ul class="nav-2 order cell">
-                <li class="nav-item">
+                <li class="nav-item is-c4">
                     <h3>Fixed Assets</h3>
                     <p class="money">US$ 20 Billions</p>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item is-c5 is-special">
                     <h3>Expenses</h3>
                     <p class="money">US$ 20 Billions</p>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item is-c6">
                     <h3>Networth</h3>
                     <p class="money">US$ 20 Billions</p>
                 </li>
              </ul>
         </li>
-        <li>
+        <li class="nav-list">
                <ul class="nav-3 order cell">
-                <li class="nav-item ">
+                <li class="nav-item is-c7">
                     <h3>Employees</h3>
                     <p class="money">US$ 20 Billions</p>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item is-c8">
                     <h3>Adwords</h3>
                     <p class="money">US$ 20 Billions</p>
                 </li>
             </ul>
          </li>
 	</ul>
-
-	</body>
+ </body>
 </html>
