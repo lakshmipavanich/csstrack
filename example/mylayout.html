@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+    <style> 
+    *{
+        box-sizing:border-box;
+    }
+    html,body{
+        height:100%;
+    }
+    .is-outline{
+        border:2px solid red;
+    }
+    h3{
+        font-size:1.8rem;
+        color:white;
+    }
+    p{
+        color:white;
+    }
+    .dashboard{
+        height:100%;
+        display:flex;
+        flex-flow:row wrap;
+    }
+    .dashboard-item{
+        flex:1 1 auto;
+    }
+
+    .special{
+        flex:3 1 auto;
+    }
+    .row{
+        display:flex;
+        border:5px solid white;
+        flex-flow:column wrap;
+    }
+    .row-item{
+        flex:1 1 auto;
+    }
+     
+    .row-item-child{
+        flex:1 1 auto;
+    }
+    .row-item-sub{
+        flex:1 1 auto;
+    }
+    .main{
+        display:flex;
+        flex-flow:row wrap;
+        border:2px solid white;
+    }
+    .cell {
+        display:flex;
+        flex-flow:column nowrap;
+        justify-content:center;
+        align-items:center;
+        border:4px solid white;
+    }
+    .c1{background-color: lightgreen;}
+    .c2{background-color: lightblue;}
+    .c3{background-color: #7a1;}
+    .c4{background-color: #fa1; }
+    .c5{background-color:#f1a}
+    .c6{background-color:#f7a}
+   
+    </style>
+</head>
+<body>
+    <div class="dashboard is-outline">
+        <div class="dashboard-item c1 row special">
+            <div class="row-item c1 main">
+                <div class="row-item-child c2 row">
+                    <div class="row-item-sub cell ">
+                        <h3>Vertical...</h3>
+                        <p>Top tile<p>
+                    </div>
+                     <div class="row-item-sub cell c6">
+                        <h3>Titles...</h3>
+                        <p>Bottom tile</p>
+                    </div>
+                </div>
+                <div class="row-item-child c3 row cell">
+                    <h3>Middle Tile</h3>
+                </div>
+            </div><!-- row-item-->
+            <div class="row-item c5 main cell">
+                <h3>Wide Tile</h3>
+            </div>
+        </div> <!-- dashborad-item-->
+
+        <div class="dashboard-item c4 row">
+            <div class="row-item cell">
+              <h3>Tall tile</h3>
+              <p>tall </p>
+            </div>
+        </div>
+    </div><!--dashboard-->
+</body>
+</html>
