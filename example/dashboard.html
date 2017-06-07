@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet"  type="text/css" href ="./reset.css">
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        html,body{
+            height:100%;
+        }
+        h3,p{
+            font-size:1.5rem;
+            color:white;
+        }
+        .is-outline{
+            border:2px solid red;
+        }
+        .dashboard{
+            height:100%;
+            display:flex;
+            flex-flow:column wrap;
+        }
+        .dashboard-item{
+            flex:1 1 auto;
+        }
+        .row{
+            display:flex;
+            flex-flow:row wrap;
+          
+        }
+        .row-item{
+            flex:1 1 auto;
+            border:2px solid green;
+        }
+
+        .c1{background-color:#76f;}
+        .c2{background-color:#185;}
+        .c3{background-color:#265;}
+        .c4{background-color:#7a8;}
+        .c5{background-color:#3e5;}
+        .c6{background-color:#985;}
+        .c7{background-color:#dd5;}
+        .c8{background-color:#cbf;}
+
+        .cell {
+            display:flex;
+            flex-flow:column nowrap;
+            justify-content:center;
+            align-items: center;
+       }
+        p{
+            opacity:0.5;
+        }
+       .cell:hover h3{
+           opacity:0.5;
+       }
+       .cell:hover p{
+           opacity:1;
+       }
+       .special{
+           flex:2 1 200px;
+       }
+    </style>
+</head>
+<body>
+    <div class="dashboard is-outline">
+        <div class="dashboard-item row">
+            <div class="row-item c1 cell special">
+                <h3>Revenue</h3>
+                <p>US$ 20 Billions</p>
+            </div>
+            <div class="row-item c2 cell">
+                <h3>Receivables</h3>
+                <p>US$ 20 Billions</p>
+            </div>
+            <div class="row-item c3 cell">
+                <h3>Treasury</h3>
+                <p>US$ 20 Billions</p>
+            </div>
+        </div>
+        <div class="dashboard-item row">
+            <div class="row-item c4 cell">
+                <h3>Fixed Assets</h3>
+                <p>US$ 20 Billions</p>
+            </div>
+            <div class="row-item c5 cell special">
+                <h3>Expenses</h3>
+                <p>US$ 20 Billions</p>
+            </div>
+            <div class="row-item c6 cell">
+                <h3>Networth</h3>
+                <p>US$ 20 Billions</p>
+            </div>
+        </div>
+        <div class="dashboard-item row">
+            <div class="row-item c7 cell">
+                <h3>Employees</h3>
+                <p>US$ 20 Billions</p>
+            </div>
+            <div class="row-item c8 cell">
+                <h3>Adwords</h3>
+                <p>US$ 20 Billions</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
