@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./reset.css">
+		<style>
+			*{
+				box-sizing: border-box;
+			}
+            body{
+                height:100%;
+            }
+			.nav ul{
+                display:flex;
+				flex-flow:row wrap;
+				justify-content:flex-start;
+				box-sizing:border-box;
+			}
+			li{
+				border:2px solid white;
+				text-align: center;
+				flex:1 1 auto;
+				color:white;
+			}
+			h3{font-size:1.8rem;}
+			p{
+				font-size:1.5rem;
+                opacity:0.5;
+			}
+            .order li:hover .money{
+				opacity:1;
+			}
+			.order li:hover h3 {
+				opacity:0.5;
+			}
+           .order li{
+                height:35vh;
+                display:flex;
+                flex-flow:row nowrap;
+                justify-content:center;
+                align-items:center;
+            }
+           
+			.nav-1 li:nth-child(1) {
+				background-color:#31CCFF;
+				flex:2 1 auto;
+			}
+			.nav-1 li:nth-child(2) {
+				background-color:#33CCCC
+			}
+			.nav-1 li:nth-child(3) {
+				background-color:#cdf;
+			}
+			.nav-2 li:nth-child(1) {
+				background-color:#192;
+			}
+			.nav-2 li:nth-child(2) {
+				background-color:#f4a;
+                flex:2 1 auto;
+			}
+			.nav-2 li:nth-child(3) {
+				background-color:#983;
+			}
+			.nav-3 li:nth-child(1) {
+				background-color:#d72;
+			}
+			.nav-3 li:nth-child(2) {
+				background-color:#2df;
+			}
+            .cell li{
+                display:flex;
+                flex-flow:column wrap;
+                justify-content:center;
+                align-items:center;
+                }
+		</style>
+	</head>
+	<body>
+	<ul class="nav">
+        <li>
+           <ul class="nav-1 order cell"> 
+                <li class="nav-item">
+                    <h3>Revenue</h3>
+                    <p class="money">US$ 20 Billions</p>
+                </li>
+                <li class="nav-item">
+                    <h3>Receivables</h3>
+                    <p class="money">US$ 20 Billions</p>
+                </li>
+                <li class="nav-item">
+                    <h3>Treasury</h3>
+                    <p class="money">US$ 20 Billions</p>
+                </li>
+            </ul>
+        </li>
+        <!-- nav 2-->
+        <li>
+            <ul class="nav-2 order cell">
+                <li class="nav-item">
+                    <h3>Fixed Assets</h3>
+                    <p class="money">US$ 20 Billions</p>
+                </li>
+                <li class="nav-item">
+                    <h3>Expenses</h3>
+                    <p class="money">US$ 20 Billions</p>
+                </li>
+                <li class="nav-item">
+                    <h3>Networth</h3>
+                    <p class="money">US$ 20 Billions</p>
+                </li>
+             </ul>
+        </li>
+        <li>
+               <ul class="nav-3 order cell">
+                <li class="nav-item ">
+                    <h3>Employees</h3>
+                    <p class="money">US$ 20 Billions</p>
+                </li>
+                <li class="nav-item">
+                    <h3>Adwords</h3>
+                    <p class="money">US$ 20 Billions</p>
+                </li>
+            </ul>
+         </li>
+	</ul>
+
+	</body>
+</html>
